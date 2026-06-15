@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>맛집소개</title>
     <style>
-         @font-face {
+        @font-face {
             font-family: 'GMarketSans';
             src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
             font-weight: 300;
@@ -41,6 +41,7 @@
         }
 
         header {
+
             width: 100%;
             display: flex;
             background-color: rgb(247, 168, 210);
@@ -52,7 +53,6 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            background-color: rgb(247, 168, 210);
         }
 
         nav {
@@ -73,7 +73,7 @@
 
         nav a:last-child {
             border-right: none;
-            /* 마지막 항목은 오른쪽 선 제거 */
+        
         }
 
         main {
@@ -168,30 +168,33 @@
             color: rgba(0, 0, 0, 0.55);
             margin-bottom: 5px;
         }
-        @media (max-width:640px){
-            .something1{
+
+        @media (max-width:640px) {
+            .something1 {
                 display: none;
             }
-            .section{
+
+            .section {
                 grid-template-columns: 1fr;
 
             }
 
-            .card-img{
-                height:200px;
+            .card-img {
+                height: 200px;
             }
-            footer{
+
+            footer {
                 flex-direction: column;
 
                 gap: 12px;
             }
 
-            footer div{
+            footer div {
                 border-right: none;
                 border-bottom: px solid rgba(200, 100, 160, 0.4);
             }
 
-            footer div:last-child{
+            footer div:last-child {
                 border-right: none;
             }
 
@@ -204,7 +207,7 @@
         <header>
 
             <div class="left">
-                <img src="./spring3.png" alt="">맛집소개
+                <img src="./spring3.png" alt="" style="height:50px;">맛집소개
             </div>
             <div class="something1">비어있으면 심심하죠?</div>
         </header>
