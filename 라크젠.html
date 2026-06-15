@@ -95,6 +95,30 @@
     footer p { font-size: 12px; padding: 4px 0; }
     footer div { border-right: 1px solid rgba(200, 100, 160, 0.4); padding: 0 20px; }
     footer div:last-child { border-right: none; }
+
+     @media (max-width:640px){
+            .something1{
+                display: none;
+            }
+
+
+           
+            footer{
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+            footer div{
+                border-right: none;
+                border-bottom: px solid rgba(200, 100, 160, 0.4);
+            }
+
+            footer div:last-child{
+                border-right: none;
+            }
+
+        }
   </style>
 </head>
 <body>
@@ -153,7 +177,7 @@
         </tr>
       </table>
 
-      <a href="./main.html" class="back-btn">← 목록으로 돌아가기</a>
+      <a href="./index.html" class="back-btn">← 목록으로 돌아가기</a>
     </div>
   </main>
 

@@ -75,6 +75,30 @@
     footer p { font-size: 12px; padding: 4px 0; }
     footer div { border-right: 1px solid rgba(200, 100, 160, 0.4); padding: 0 20px; }
     footer div:last-child { border-right: none; }
+
+         @media (max-width:640px){
+            .something1{
+                display: none;
+            }
+
+
+           
+            footer{
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+            footer div{
+                border-right: none;
+                border-bottom: px solid rgba(200, 100, 160, 0.4);
+            }
+
+            footer div:last-child{
+                border-right: none;
+            }
+
+        }
   </style>
 </head>
 <body>
@@ -85,9 +109,9 @@
     <div>비어있으면 심심하죠?</div>
   </header>
   <nav>
-    <a href="./main.html">첫페이지</a>
-    <a href="./맛집list.html">맛집 목록</a>
-    <a href="./review.html">지역별 리뷰</a>
+    <a href="./index.html">첫페이지</a>
+    <a href="./index.html">맛집 목록</a>
+    <a href="./index.html">지역별 리뷰</a>
   </nav>
   <main>
     <div class="empty">비어있으면 심심하죠?ㄹㅇㅋㅋ</div>

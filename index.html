@@ -168,6 +168,34 @@
             color: rgba(0, 0, 0, 0.55);
             margin-bottom: 5px;
         }
+        @media (max-width:640px){
+            .something1{
+                display: none;
+            }
+            .section{
+                grid-template-columns: 1fr;
+
+            }
+
+            .card-img{
+                height:200px;
+            }
+            footer{
+                flex-direction: column;
+
+                gap: 12px;
+            }
+
+            footer div{
+                border-right: none;
+                border-bottom: px solid rgba(200, 100, 160, 0.4);
+            }
+
+            footer div:last-child{
+                border-right: none;
+            }
+
+        }
     </style>
 </head>
 
@@ -182,7 +210,7 @@
         </header>
         <nav>
             <a href="./비어있으면 심심하죠.html">첫페이지</a>
-            <a href="./비어있으면 심심하죠.html.">맛집 목록</a>
+            <a href="./비어있으면 심심하죠.html">맛집 목록</a>
             <a href="./비어있으면 심심하죠.html">지역별 리뷰</a>
         </nav>
         <main>
