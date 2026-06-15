@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맛집소개</title>
+    <style>
+         @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+            font-weight: 300;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'GMarketSans', sans-serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            background-color: rgb(247, 168, 210);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgb(247, 168, 210);
+        }
+
+        nav {
+            background-color: rgb(247, 168, 210);
+            margin-bottom: 10px;
+            display: flex;
+            border-top: 1px solid rgba(200, 100, 160, 0.3);
+            border-bottom: 1px solid rgba(200, 100, 160, 0.3);
+
+        }
+
+        nav a {
+            flex: 1;
+            text-align: center;
+            padding: 0 16px;
+            border-right: 1px solid rgba(200, 100, 160, 0.4);
+        }
+
+        nav a:last-child {
+            border-right: none;
+            /* 마지막 항목은 오른쪽 선 제거 */
+        }
+
+        main {
+            background-color: white;
+        }
+
+        footer {
+
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            width: 100%;
+            padding-top: 20px;
+            background-color: rgb(247, 168, 210);
+            border-top: 1px solid rgba(200, 100, 160, 0.4);
+        }
+
+        .footer-left {
+            padding-left: 20px;
+        }
+
+        footer p {
+            font-size: 12px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        footer div {
+
+            border-right: 1px solid rgba(200, 100, 160, 0.4);
+        }
+
+        footer div :last-child {
+            border-right: none;
+        }
+
+        .section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            padding: 32px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.55);
+            border: 1px solid rgba(200, 100, 160, 0.25);
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 400px;
+            flex-shrink: 0;
+
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-name {
+            font-size: 17px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .card-name a:hover {
+            color: rgba(200, 100, 160, 0.9);
+        }
+
+        .card-desc {
+            font-size: 13px;
+            color: rgba(0, 0, 0, 0.55);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .card-divider {
+            border: none;
+            border-top: 1px solid rgba(200, 100, 160, 0.2);
+            margin: 10px 0;
+        }
+
+        .info-row {
+            font-size: 12px;
+            color: rgba(0, 0, 0, 0.55);
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+
+            <div class="left">
+                <img src="./spring3.png" alt="">맛집소개
+            </div>
+            <div class="something1">비어있으면 심심하죠?</div>
+        </header>
+        <nav>
+            <a href="./비어있으면 심심하죠.html">첫페이지</a>
+            <a href="./비어있으면 심심하죠.html.">맛집 목록</a>
+            <a href="./비어있으면 심심하죠.html">지역별 리뷰</a>
+        </nav>
+        <main>
+            <section class="section">
+                <article class="card">
+                    <div class="card-img">
+                        <img src="./images/라크젠 로고.png" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-name">
+                            <a href="./라크젠.html">라크젠</a>
+                        </h3>
+                        <p class="card-desc">
+                            쫄깃한 면발과 진한 국물이 일품인 우동 전문점. 현지인들이 줄 서서 먹는 숨은 맛집.
+                        </p>
+                        <p class="card-divider">
+
+                        </p>
+                        <p class="info-row">
+                            충남 천안시 동남구 터미널3길 24 1층 라크젠
+                        </p>
+                        <p class="info-row">
+                            11:00~20:20 브레이크타임 15:20~17:30
+                        </p>
+
+                    </div>
+
+                </article>
+                <article class="card">
+                    <div class="card-img"><img src="./images/코코로동로고.png" alt=""></div>
+                    <div class="card-body">
+                        <h3 class="card-name">
+                            <a href="./쿠로쿠로.html">쿠로쿠로</a>
+                        </h3>
+                        <p class="card-desc">
+                            쫄깃한 돼지·닭고기를 달콤한 데리야키 소스로 볶아 밥 위에 올린 덮밥 전문점.
+                        </p>
+                        <p class="card-divider">
+
+                        </p>
+                        <p class="info-row">
+                            충남 천안시 동남구 만남로 9 1층 105호
+                        </p>
+                        <p class="info-row">
+                            11:00~21:00 브레이크타임 15:00~17:00
+                        </p>
+
+                    </div>
+
+                </article>
+            </section>
+        </main>
+
+
+        <aside>
+
+        </aside>
+
+
+        <footer>
+            <div class="footer-left">
+                <div class="footer-logo">
+                    맛집소개
+                </div>
+                <p>
+                    천안 맛집 큐레이션 서비스
+                </p>
+            </div>
+
+            <div class="footer-center">
+                <p>대표 : 김맛집 | 사업자등록번호 : 123-45-67890</p>
+                <p>주소 : 서울특별시 마포구 맛집로 42길 7, 3층</p>
+                <p>고객센터 : 02-1234-5678 | matzip@example.com</p>
+            </div>
+
+            <div class="footer-right">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+                <a href="#">문의하기</a>
+                <p>© 2026 맛집소개. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
